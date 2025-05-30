@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+:root {
+    --color-secondary: #0027D5;
+    --color-tag: #FFFFFF;
+    --font-weight-bold: 700;
+}
+
 body, html {
     font-family: "Noto Sans TC", sans-serif;
     font-size: 16px;
@@ -20,6 +26,10 @@ img {
     height: auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     height: 90px;
 }
@@ -27,7 +37,6 @@ header {
 .container {
     max-width: 1296px;
     margin: 0 auto;
-    background-color: pink;
 }
 
 header ul {
@@ -53,11 +62,41 @@ header ul {
 
 .about-card {
     display: flex;
-    gap: 24px;
+    gap: 24px; 
+}
+
+.about-image {
+    width: 50%;
 }
 
 .about-title {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.about-tags {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 4px 0 8px;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: var(--color-secondary);
+    font-weight: var(--font-weight-bold);
+}
+
+.status {
+    background-color: var(--color-secondary);
+    color: var(--color-tag);
+    padding: 6px 12px;
+    border-radius: 40px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: var(--font-weight-bold);
 }
