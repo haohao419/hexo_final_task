@@ -17,6 +17,7 @@ body, html {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
+    letter-spacing: 0;
     background-color: #FBFBFB;
     color: #000000;
 }
@@ -35,7 +36,7 @@ header {
 }
 
 .container {
-    max-width: 1296px;
+    max-width: 636px;
     margin: 0 auto;
 }
 
@@ -63,6 +64,7 @@ header ul {
 .about-card {
     display: flex;
     gap: 24px; 
+    margin-bottom: 80px;
 }
 
 .about-image {
@@ -100,3 +102,57 @@ h1 {
     font-size: 28px;
     font-weight: var(--font-weight-bold);
 }
+
+h2 {
+    font-size: 28px;
+    color: var(--color-secondary);
+    font-weight: var(--font-weight-bold);
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 12px;
+}
+
+.code-basement, .framework, .practice, .conclusion, .reading {
+    margin-top: 48px;
+}
+
+.content-image {
+    margin-bottom: 24px;
+}
+
+.content-txt {
+    margin: 24px 0;
+}
+
+.content-txt .advice {
+    margin-top: 8px;
+}
+
+ol {
+    list-style-type: decimal;
+    margin-left: 1em;
+}
+
+.container ul {
+    list-style-type: disc;
+    margin-left: 1.5em;
+}
+
+.container ul li::marker {
+    font-size: 0.5rem;
+}
+
+.summary {
+    font-weight: var(--font-weight-bold);
+    background-color: #EDEDED;
+    padding: 24px;
+    border-radius: 24px;
+}
+
+.conclusion .summary {
+    margin: 24px 0;
+}
+
