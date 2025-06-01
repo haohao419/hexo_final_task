@@ -155,7 +155,7 @@ ol {
     margin: 24px 0;
 }
 
-.page {
+.pagination {
     display: flex;
     justify-content: space-between;
     margin-top: 48px;
@@ -169,3 +169,113 @@ ol {
     color: #4B4B4B;
 }
 
+.footer-contact {
+    height: 208px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    gap: 24px;
+}
+
+.social-media i {
+    color: var(--color-secondary);
+    font-size: 24px;
+}
+
+.email a {
+    font-size: 32px;    
+    color:#000000;
+}
+
+.copyright {
+    height: 72px;
+    text-align: center;
+}
+
+.about-image,
+.content-image {
+    max-width: 100%;
+    height: 640px;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-image {
+    background-image: url("images/desktop/About\ Section.png");
+}
+
+.content-image {
+    height: 320px;
+} 
+
+.content1 {
+    background-image: url("images/desktop/content1.png");
+}
+
+.content2 {
+    background-image: url("images/desktop/content2.png");
+}
+
+.content3 {
+    background-image: url("images/desktop/content3.png");
+}
+
+.content4 {
+    background-image: url("images/desktop/content4.png");
+}
+
+
+@media (max-width: 767px) {
+    /* 更換圖片 */
+    .about-image,
+    .content-image {
+        max-width: 100%;
+        height: 320px;
+    }
+
+    .about-image {
+        background-image: url("images/mobile/About\ Section.png");
+    }
+
+    .content1 {
+        background-image: url("images/mobile/content1.png");
+    }
+
+    .content2 {
+        background-image: url("images/mobile/content2.png");
+    }
+
+    .content3 {
+        background-image: url("images/mobile/content3.png");
+    }
+
+    .content4 {
+        background-image: url("images/mobile/content4.png");
+    }
+
+    .about-card {
+        flex-direction: column;
+    }
+
+    .about-title {
+        width: 100%;
+        padding: 48px 12px 0px;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .container {
+        padding: 64px 12px;
+        margin: 80px auto 0;
+    }
+
+    footer .footer-contact {
+        display: none;
+    }
+}
