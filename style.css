@@ -43,7 +43,7 @@ a {
     padding-bottom: 80px;
 }
 
-header ul {
+.header ul {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -202,8 +202,8 @@ ol {
     display: none;
 }
 
-@media (max-width: 767px) {
-     .about-card {
+@media (max-width: 374px) {
+    .about-card {
         flex-direction: column;
     }
 
@@ -214,14 +214,24 @@ ol {
 
     .about-image {
         width: 100%;
+        background-color: pink;
     }
 
     .blog-content {
-        padding: 64px 12px;
-        margin: 80px auto 0;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
+
     footer .footer-contact {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {    
         display: none;
     }
 }
